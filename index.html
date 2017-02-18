@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Template</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- custom styles -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- font awesome -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body class="background-dark text-dark-orange">
+	<div class="left-nav-menu-wrap clearfix oc-main-nav-wrap">
+		<ul class="main-nav-menu list-unstyled oc-main-nav-list-wrap">
+			<li class="top-title">
+				<a href="#" title="User dashboard" class="this-minimized">
+					<i class="fa fa-chevron-left" style="display: none;"></i>
+					<i class="fa fa-list-ul" style="display: inline;"></i>
+					<span class="text">User dashboard</span>
+				</a>
+			</li>
+			<li class="">
+				<a data-toggle="tab" href="#menu-sub-products" class="oc-has-submenu" title="Products">
+					<i class="fa fa-barcode"></i> 
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="" title="Outlet Information">
+					<i class="fa fa-bank"></i> 
+					<span class="text">Outlet Information</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="" title="Employee">
+					<i class="fa fa-user"></i> 
+					<span class="text">Employee</span>
+				</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#menu-sub-inventory" class="oc-has-submenu" title="Inventory">
+					<i class="fa fa-truck"></i> 
+					<span class="text">Inventory</span>
+				</a>
+			</li>
+			<li class="">
+				<a data-toggle="tab" href="#menu-sub-reports" class="oc-has-submenu" title="Reports">
+					<i class="fa fa-bar-chart"></i> 
+					<span class="text">Reports</span>
+				</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#site-customers" class="oc-has-submenu" title="Customers">
+					<i class="fa fa-users"></i> 
+					<span class="text">Customers</span>
+				</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#site-settings" class="oc-has-submenu" title="Settings">
+					<i class="fa fa-cog"></i> 
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li class="logout-link">
+				<a href="#" title="Logout">
+					<i class="fa fa-power-off"></i> 
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="sub-menus-main-nav list-unstyled oc-sub-menu-wrap" id="menu-sub-products">
+			<li class="top-title submenu-header">
+				<a href="#" class="">Products</a>
+			</li>
+			<li>
+				<a href="#" class="">Overview/New Product</a> 
+			</li>
+			<li>
+				<a href="#" class="">Product Attributes</a>
+			</li>
+			<li>
+				<a href="#" class="">Price Book</a>
+			</li>
+		</ul>
+
+		<ul class="sub-menus-main-nav list-unstyled fade oc-sub-menu-wrap" id="menu1">
+			<li class="top-title submenu-header">
+				<a href="#" class="">Home</a>
+			</li>
+			<li>
+				<a href="#" class="">Overview</a>
+			</li>
+			<li>
+				<a href="#" class="">Sales Reports</a>
+			</li>
+		</ul>
+
+		<ul class="sub-menus-main-nav list-unstyled fade oc-sub-menu-wrap" id="menu-sub-inventory">
+			<li class="top-title submenu-header toUpper">
+				<a href="#" class="">Inventory</a>
+			</li>
+			<li>
+				<a href="#">Inventory Overview</a>
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#stock-stock-transfer" href="#" class="collapsed">Stock Transfer				<i class="fa fa-chevron-up pull-right"></i>
+				</a>
+			</li>
+			<li class="sub-sub-menu">
+				<ul class="list-unstyled collapse" id="stock-stock-transfer">
+					<li>
+						<a href="#">Stock Issue</a>
+					</li>
+					<li>
+						<a href="#">Stock Receipt </a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class="sub-menus-main-nav list-unstyled oc-sub-menu-wrap" id="menu-sub-reports">
+			<li class="top-title submenu-header toUpper">
+				<a href="#" class="this-minimized">Reports</a>
+			</li>
+			<li>
+				<a href="#">Overview</a>
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#sales-report-accordian" href="#" class="collapsed">Sales Reports				<i class="fa fa-chevron-up pull-right"></i>
+				</a>
+			</li>
+			<li class="sub-sub-menu">
+				<ul class="list-unstyled collapse" id="sales-report-accordian">
+					<li>
+						<a href="#">Sales by Branch/Outlet</a>
+					</li>
+					<li>
+						<a href="#">Sales by Hour</a>
+					</li>
+					<li>
+						<a href="#">Sales by Payment Mode</a>
+					</li>
+					<li>
+						<a href="#">Sales ATV/UPT</a> 
+					</li>
+					<li>
+						<a href="#">Invoice Listing</a> 
+					</li>
+					<li>
+						<a href="#">Sales Comparison</a>  
+					</li>
+					<li>
+						<a href="#">Sales Heatmap</a> 
+					</li>
+				</ul>
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#product-report-accordian" href="#" class="collapsed">Product Reports				<i class="fa fa-chevron-up pull-right"></i>
+				</a>
+			</li>
+			<li class="sub-sub-menu">
+				<ul id="product-report-accordian" class="list-unstyled collapse">
+					<li>
+						<a href="#">Sales by Product</a>
+					</li>
+					<li>
+						<a href="#">Sales by Product Attribute</a>
+					</li>
+					<li>
+						<a href="#">Product Sell Through by Outlet</a>
+					</li>
+				</ul>
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#customer-report-accordian" href="#" class="collapsed">Customer Reports				<i class="fa fa-chevron-up pull-right"></i>
+				</a>
+			</li>
+			<li class="sub-sub-menu">
+				<ul class="list-unstyled collapse" id="customer-report-accordian">
+					<li>
+						<a href="#">Sales by Customer Type</a>
+					</li>
+					<li>
+						<a href="#">Customer Purchase History</a>
+					</li>
+					<li>
+						<a href="#"> Customer Analysis</a> 
+					</li>
+					<li>
+						<a href="#">Product Sales By Customer Type</a> 
+					</li>
+				</ul>
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#salesman-report-accordian" href="#" class="collapsed">Salesman Reports				<i class="fa fa-chevron-up pull-right"></i>
+				</a>
+			</li>
+			<li class="sub-sub-menu">
+				<ul class="list-unstyled collapse" id="salesman-report-accordian">
+					<li>
+						<a href="#">Sales by Salesman</a>
+					</li>
+				</ul>
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#inventory-by-outlet-accordian" href="#" class="collapsed">Inventory Reports				<i class="fa fa-chevron-up pull-right"></i> 
+				</a>
+			</li>
+			<li class="sub-sub-menu">
+				<ul class="list-unstyled collapse" id="inventory-by-outlet-accordian">
+					<li>
+						<a href="#">Inventory by Outlet</a>
+					</li>
+					<li>
+						<a href="#">Sell Through Ratio</a>
+					</li>			
+				</ul>
+			</li>
+		</ul>
+		<ul class="sub-menus-main-nav list-unstyled fade oc-sub-menu-wrap" id="site-customers">
+			<li class="top-title submenu-header">
+				<a href="#" class="">CUSTOMER</a>
+			</li>
+			<li>
+				<a href="#">Overview/ New Customer</a>
+			</li>
+			<li>
+				<a href="#"></a>
+			</li>
+			<li>
+				<a href="#"></a>
+			</li>
+		</ul>
+		<ul class="sub-menus-main-nav list-unstyled fade oc-sub-menu-wrap" id="site-settings">
+			<li class="top-title submenu-header">
+				<a href="#" class="">Settings</a>
+			</li>
+			<li>
+				<a href="#">Site Preferences</a>
+			</li>
+			<li>
+				<a href="#">User Access Settings</a>
+			</li>
+			<li>
+				<a href="#">User Settings</a> 
+			</li>
+			<li>
+				<a href="#">Upload File Format</a> 
+			</li>
+			<li class="toggle-sub-sub-menu">
+				<a data-toggle="collapse" data-target="#settings-heatmap-accordian" href="#" class="collapsed">Settings Heatmap				<i class="fa fa-chevron-up pull-right"></i> 
+				</a>
+			</li> 
+			<li class="sub-sub-menu">
+				<ul class="list-unstyled collapse" id="settings-heatmap-accordian">
+					<li>
+						<a href="">Outlet Heatmap</a>
+					</li>			
+				</ul>
+			</li>
+
+
+		</ul>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	var sideMenuToggleVal = "0";
+
+	$(document).ready(function(){
+		$(".top-title").click(function(){
+			if (sideMenuToggleVal == "0") {
+				$(".left-nav-menu-wrap > ul").css("width","250px");
+				$(".main-nav-menu li a span").css("display","inline");
+				$(".main-nav-menu li a .fa-chevron-left").css("display","inline");
+				$(".main-nav-menu li a .fa-list-ul").css("display","none");
+				// alert(sideMenuToggleVal);
+				sideMenuToggleVal = "1";
+			} else if (sideMenuToggleVal == "1"){
+				$(".left-nav-menu-wrap > ul").css("width","45px");
+				$(".main-nav-menu li a span").css("display","none");
+				$(".main-nav-menu li a .fa-chevron-left").css("display","none");
+				$(".main-nav-menu li a .fa-list-ul").css("display","inline");
+				sideMenuToggleVal = "0";
+				// alert(sideMenuToggleVal);
+			}
+		});
+	});
+
+</script>
+</html>

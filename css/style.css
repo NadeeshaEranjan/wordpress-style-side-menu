@@ -1,0 +1,86 @@
+.left-nav-menu-wrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    z-index: 20;
+    background: #2F343B;
+}
+
+.left-nav-menu-wrap > ul {
+    width: 45px;
+    overflow: hidden;
+    background: #e6e6e8;
+    margin: 0;
+    height: 100%;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul.list-unstyled > li {
+    padding: 10px;
+}
+
+.left-nav-menu-wrap li {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+li.top-title {
+    background: #2a2b2c;
+    height: 40px;
+}
+
+ul.main-nav-menu.list-unstyled > li.top-title a, ul.main-nav-menu.list-unstyled > li.top-title .fa {
+    color: white;
+}
+
+.left-nav-menu-wrap a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+ul.main-nav-menu.list-unstyled > li.top-title a, ul.main-nav-menu.list-unstyled > li.top-title .fa {
+    color: white;
+}
+
+ul.main-nav-menu.list-unstyled > li > a .fa {
+    color: black;
+    padding: 0 9px 0 7px;
+    font-size: 16px;
+}
+
+.left-nav-menu-wrap i.fa.fa-chevron-left {
+    display: inline;
+}
+
+li.top-title .fa {
+    display: none;
+}
+
+ul.list-unstyled > li > a {
+    color: #686869;
+}
+
+.left-nav-menu-wrap ul li a span{
+    display: none;
+}
+
+.left-nav-menu-wrap ul li.top-title a:hover {
+    width: 250px !important;
+}
